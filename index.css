@@ -1,0 +1,38 @@
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+.buttons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10%;
+   padding: 20px;
+}
+
+.Increase{
+    padding: 10px 20px;
+    margin: 10px 15px;
+    box-shadow: 5px 5px 15px;
+}
+.Decrease{
+    padding: 10px 20px;
+    margin: 10px 15px;
+    box-shadow: 5px 5px 15px;
+}
+.Increase:hover{
+    cursor: pointer;
+}
+.Decrease:hover{
+    cursor: pointer;
+}
+.Increase:active{
+    box-shadow: 5px 5px 30px;
+}
+.Decrease:active{
+    box-shadow: 5px 5px 30px;
+}
