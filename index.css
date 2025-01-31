@@ -1,38 +1,68 @@
-.count{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica;
-    font-size: 2em;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+@keyframes rgb-border {
+    0% { border-color: red; box-shadow: 0 0 15px red; }
+    25% { border-color: blue; box-shadow: 0 0 15px blue; }
+    50% { border-color: green; box-shadow: 0 0 15px green; }
+    75% { border-color: yellow; box-shadow: 0 0 15px yellow; }
+    100% { border-color: red; box-shadow: 0 0 15px red; }
+}
+.maindiv{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 8px solid rgba(0, 255, 217, 0.524); /* Initial color */
+    border-radius: 15px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 15px red;
+}
+.increment{
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border: 8px solid red; /* Initial color */
+    border-radius: 15px;
+    animation: rgb-border 1s infinite linear;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 15px red;
 }
 
-.buttons{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 10%;
-   padding: 20px;
+.decrement{
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border: 8px solid red; /* Initial color */
+    border-radius: 15px;
+    animation: rgb-border 1s infinite linear;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 15px red;
 }
 
-.Increase{
-    padding: 10px 20px;
-    margin: 10px 15px;
-    box-shadow: 5px 5px 15px;
+.reset{
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    border: 8px solid red; /* Initial color */
+    border-radius: 15px;
+    animation: rgb-border 1s infinite linear;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 15px red;
 }
-.Decrease{
-    padding: 10px 20px;
-    margin: 10px 15px;
-    box-shadow: 5px 5px 15px;
-}
-.Increase:hover{
-    cursor: pointer;
-}
-.Decrease:hover{
-    cursor: pointer;
-}
-.Increase:active{
-    box-shadow: 5px 5px 30px;
-}
-.Decrease:active{
-    box-shadow: 5px 5px 30px;
-}
+
